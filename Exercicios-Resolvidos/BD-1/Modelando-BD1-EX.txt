@@ -1,0 +1,114 @@
+Questão 1 - Exercício 01
+
+Entidades
+
+Produto
+Cliente
+Pedido
+
+Relacionamentos
+
+Cliente FAZ Pedido
+Pedido Composto Produto
+
+Atributos
+
+Produto: Código, nome do produto, categoria (detergente, sabão em pó, sabonete), preço. Cardinalidades: n,n (Produto)
+Cliente: Código, nome do cliente, endereço (rua, número, sala, cidade, CEP, UF), telefone, status do cliente (bom, médio, ruim), limite de crédito
+Pedido: Código (data de elaboração) - Cardinalidades: 0,n (Pedido)
+
+Questão 2 - Exercício 01
+
+Entidades
+
+Estúdio
+Filmes
+Atores
+
+Relacionamentos
+
+Estúdio PRODUZ Filmes
+Filmes ATUAM Atores
+
+Atributos
+
+Estúdio: Nome único, dono, data de fundação, faturamento do ano anterior - Cardinalidades: 0,n (Filme)
+Filmes: Nome único, qtd.meses_criação, ano do lançamento, num_copyright, cachê, papel.ator, custo total, 
+Atores: Nome único, num_seg.social (único), nacionalidade, idade, sexo, conj.papeis (avô, mocinha, jovem, galã, adolescente) - Cardinalidades: 1,n (Atores)
+
+Questão 3 - Exercício 01
+
+Entidades
+
+Livros
+Associados
+
+Relacionamentos
+
+Associado RETIRA Livros
+Empréstimos (auto-relacionamento - Livros): data de realização do emp., emp. correntes, histórico de emp.
+
+Atributos
+
+Livros: Codigo, autores, título, editora, cod.edição, cod.ISBN, conj.p.chave
+Associados: Código, nome, endereço
+
+Questão 4 - Exercício 01
+
+Entidades
+
+Pilotos
+Instrutores
+Alunos
+Socios
+Emissão_Brevê
+
+Relacionamentos
+
+Aluno POSSUI Registro_Voo
+Instrutor EMITE Registro_Vôo
+
+
+
+Atributos
+
+Socios: Número de Matrícula, nome, endereço, idade
+Pilotos: Número de brevê, nome, endereço, idade
+Instrutores (auto-relacionamento - nome do curso, data de obt.diploma, instituição)
+Alunos: registros_saidas (data, instrutor, hora de saída, hora de chegada), parecer_instrutor
+
+Questão 7 - Exercício 01
+
+Entidades
+
+Fitas
+Clientes
+
+Relacionamentos
+
+Cliente ALUGA Fitas
+
+Atributos
+
+Fitas (auto-relacionamento - Filme): Num.ID, info.Atores (nome ator, data_nasc.ator)
+Clientes: Num.Associado Prenome, sobrenome, telefone, endereço
+
+Questão 8 - Exercício 01
+
+Entidades
+
+Médicos
+Pacientes
+Quartos
+
+Relacionamentos
+
+Médico RESPONSÁVEL Paciente
+Paciente INTERNADO Quarto
+
+Atributos
+
+Médico: Num.CRM, nome, salário, Esp.Formação (Ortopedia, traumatologia...)
+Paciente: nome, RG, CPF, endereço, telefone, data.nasc
+Quartos: Num.Quarto, andar.Quarto
+
